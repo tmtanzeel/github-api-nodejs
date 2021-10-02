@@ -35,6 +35,6 @@ app.get('/', function (req, res) {
 })
 
 // replace 3000 with (process.env.PORT) when deploying on a server
-app.listen(3000, function () {
+app.listen((process.env.PORT), function () {
     console.log('Server listening on 3000 port');
 });
